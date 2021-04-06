@@ -1,10 +1,39 @@
-li{
+ul{
     text-align: center;
 }
-h2{text-align: center;
+li {
+    text-align: center;
+
+}
+p{
+    color: whitesmoke;
 }
 
-footer{
+h2 {
     text-align: center;
-   
+    color: whitesmoke;
+
+}
+    H1{
+        text-align: center;
+        color: whitesmoke;
+    }
+
+footer {
+    text-align: center;
+    color:whitesmoke;    
+    background-color: black;
+    box-shadow: whitesmoke 0px -3px 4px;
+}
+header{
+    text-align: center;
+    color:whitesmoke; 
+    background-color:black;
+    box-shadow: whitesmoke 3px 0px 4px;
+}
+div.steps{
+    
+}
+body{
+    background-color: rgb(36, 36, 36);
 }
