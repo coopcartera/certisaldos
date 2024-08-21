@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forulario de prueba</title>
+    <link rel="stylesheet" href="./css/frm.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1><i data-feather="file-text" class="icon"></i> Formulario de Solicitud de Certificados</h1>
+    <form id="myForm"
+    method="post"
+    action="https://api.sheetmonkey.io/form/kCmYo3ykGY2ebVNt5GX5YK"><!--cambiar API-->
+    <label for="cedula">Cedula:</label>
+    <input type="number" name="cedula" id="cedula" required>
+    <label for="nombre">Nombres y Apellidos:</label>
+    <input type="text" name="nombre" id="nombre" oninput="this.value = this.value.toUpperCase()" required>    
+    <label for="email">Correo Electronico:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="tel">Telefono:</label>
+    <input type="number" name="tel" id="tel" pattern="[0-9] {7,10}" required>
+    <label for="empresa">Empresa</label>
+    <select name="empresa" id="empresa" required>
+        <option value="">Elige una empresa</option>
+        <option value="INVERBELLO">INVERBELLO CREDIYA</option>
+        <option value="COOLCARIBE">COOLCARIBE</option>
+        <option value="COOPBASTIDAS">COOPBASTIDAS</option>
+        <option value="CREDIATLANTIC">CREDIATLANTIC SAS</option>
+        <option value="COOCARBELL">COOCARBELL</option>
+    </select>
+    <label for="cantidad">Cuantos Certificados solicita:</label>
+    <input type="number" name="cantidad" id="cantidad" min="1" max="5" required>
+    <label for="pagaduria">Pagaduría</label>
+    <select name="pagaduria" id="pagaduria" required>
+        <option value="">Elige una pagaduría</option>
+        <option value="COLPENSIONES">Colpensiones</option>
+        <option value="FOPEP">Fopep</option>
+        <option value="CB">COOPBASTIDAS</option>
+        <option value="CA">CREDIATLANTIC SAS</option>
+        <option value="CL">COOCARBELL</option>
+    </select>
+    <label for="origen">Origen de Recursos</label>  
+    <select name="origen" id="origen" required>
+        <option value=""></option>
+        <option value="RECURSOS PROPIOS">Recuros Propios</option>
+        <option value="TERCERO">Banco, Cooperativa o Financiera</option>
+    </select>
+    <label for="entidad">Entidad que Realizara La Compra de Cartera</label>
+    <select name="entidad" id="entidad" style="display: none;">
+        <option value=""></option>
+        <option value="GNB SUDAMERIS">BANCO GNB SUDAMERIS</option>
+        <option value="AV VILLAS">BANCO AV VILLAS</option>
+        <option value="BOGOTA">BANCO DE BOGOTA</option>
+        <option value="POPULAR">BANCO POPULAR</option>
+        <option value="BANCOLOMBIA">BANCOLOMBIA</option>
+        <option value="BBVA">BBVA</option>
+        <option value="entidad">BANCO DE OCCIDENTE</option>
+        <option value="entidad">BANCOOMEVA</option>
+        <option value="entidad">BANCO CAJA SOCIAL</option>
+        <option value="entidad">CREDIVALORES</option>
+        <option value="entidad">CREDIFINANCIERA</option>
+        <option value="entidad">GIROS Y FINANZAS</option>
+        <option value="entidad">KREDIT PLUS SAS</option>
+        <option value="entidad">JURISCOOP</option>
+        <option value="entidad">CREDITO1</option>
+        <option value="entidad">FINEXUS</option>
+        <option value="entidad">KREDIT</option>
+        <option value="entidad">BAYPORT</option>
+        <option value="entidad">AVISTA</option>
+        <option value="entidad">FINSOCIAL</option>
+        <option value="entidad">AVANZA</option>
+        <option value="entidad">EXCELCREDIT</option>
+        <option value="entidad">MISSION SAS</option>
+        <option value="entidad">SOLFINANZAS</option>
+        <option value="entidad">E-CREDIT S.A.S</option>
+        <option value="entidad">ACCECREDITOS</option>
+        <option value="entidad">SOEMPRESARIAL</option>
+        <option value="entidad">SOL DE ORO</option>
+    </select>
+    <label for="rc">Ingrese el numero de recibo de caja:</label>
+    <input type="number" id="rc" name="rc">
+    <!--generar el radicado-->
+    <label for="radicado" required="">Radicado</label>
+    <div class="rad"> 
+    <input type="text" id="radicado" name="radicado" readonly required>
+        <button class="btng" type="button" onclick="generarRadicado()">Generar Radicado<i data-feather="key" class="icon"></i></button>
+    </div>
+ <!--marca de tiempo-->
+    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+<!--boton de enviar-->
+    <input class="btn" type="submit" value="Enviar Solicitud" >
+    </form>
+    </div>
+
+    <script src="./js/formtest.js"></script>
+    <script>
+    feather.replace({ color: '#666', stroke: '#666' });
+    </script>
+</body>
+</html>

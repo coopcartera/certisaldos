@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <link rel="stylesheet" href="./css/lps.css">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div class="error-message" id="error-message">
+        <h1>¡Ups! Algo salió mal <b>:c</b></h1>
+        <p>No pudimos cargar la página. Por favor, <b>verifica las fechas de apertura de la plataforma</b> o <b>inténtalo de nuevo más tarde.</b></p>
+    </div>
+
+    <script>
+        function loadPage() {
+            return new Promise((resolve, reject) => {
+                // Simulamos la carga de una página
+                setTimeout(() => {
+                    // Cambia esto a `resolve()` para ca
+                    //reject(new Error('No se pudo cargar la página'));
+                    resolve();
+                }, 5000);//tiempo de carga ebtre mas grande el numero mas demora en cargar la pagina
+            });
+        }
+
+        window.addEventListener('load', () => {
+            loadPage()
+                .then(() => {
+                    // Si la página se carga correctamente, redirigimos
+                    window.location.href = './TermsQ9W7X8V6Z5C4K3R2E1P0O9L8.html';
+                })
+                .catch(() => {
+                    // Si hay un error, mostramos el mensaje de error
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('error-message').style.display = 'block';
+                });
+        });
+    </script>
+</body>
+</html>

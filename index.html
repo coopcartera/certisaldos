@@ -1,92 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coopcertificados</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mystile.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <title>Solicitud de Certificados de Saldo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <div calss="container fixed">
-            <br>
-            <a>
-                <h1>SOLICITUDES DE CERTIFICADOS</h1>
-            </a>
-            <br>
-        </div>
-    </header>
-    <br><br>
     <div class="container">
-        <!-- fecha de etrega-->
-        <h2>Fecha de entrega para nuevo corte: AGOSTO 20 DE 2024</h2>
-        <br>
-           <h3>Se reciben solicitudes para nuevo corte desde el 12 al 14 de AGOSTO de 2024 
-           
-           
-           
-           
-           
-           
-           
-           </h3>
-        <br>
-        <!--h3>SE RECIBEN SOLICITUDES DE CERTIFICADOS DE SALDO HASTA EL 30 DE NOVIEMBRE DE 2024 </h3-->
-        <h3> Le informamos que a partir del mes de febrero de 2024, el valor de los certificados de saldos será de $35.000</h3>
-        <br>
-        <p>
-            Leer atentamente:<br>
-            Estimado cliente, a continuación se encuentra el paso a paso para solicitar su certificado. <br> Recuerde
-            que diligenciar correctamente su solicitud así como la expedición correcta del documento solicitado
-            dependerá únicamente de usted. <br>
-            Haber pagado el certificado no garantiza la expedición del mismo sin el diligenciamiento correcto del
-            formulario. <br>
-            Al momento de realizar la solicitud usted deberá contar con un recibo de caja válido para el periodo
-            correspondiente. <br>
-            Se le recuerda que solo podrá diligenciar el formulario dentro del período especificado anteriormente.
-        </p>
-    </div>
-    <br>
-    <!--boton solictar credito dirije a whatsapp de credito-->
-    <div class="container">
-        <a class="btn btn-success btn-lg btn-block" href="https://wa.link/wtvgiy" role="button">SOLICITA TU CREDITO YA! CON NOSOTROS</a>
-    </div>
-    <br><br><br>
-    <!--aqui van el paso a paso para realizar solicitud-->
-    <div class="steps" class="container">
-        <h2>Paso a paso para realizar solicitud</h2>
-        <div class="container">
-            <ul class="list-group">
-                <li class="list-group-item active">PASO 1: Click en el botón Realizar Solicitud.</li>
-                <li class="list-group-item">PASO 2:  Ingresar su correo electrónico y aceptar términos y condiciones.</li>
-                <li class="list-group-item active">PASO 3: Diligenciar correctamente el formulario.</li>
-                <li class="list-group-item">PASO 4: Dirigirse a la oficina y reclamar personalmente el documento en la fecha especificada.</li>
-            </ul>
+        <h1><i data-feather="file-text" class="icon"></i> Solicitud de Certificados de Saldo</h1>
+<!--aqui van las fechas-->        
+        <h2>Fechas Importantes</h2>
+        <div class="date-card">
+            <i data-feather="calendar" class="icon"></i>
+            <div><!--fecha de apertura-->
+                <h3>Apertura de la Plataforma</h3>
+                <p>9 de Octubre, 2024</p>
+            </div>
         </div>
-        <br>
-        <!--boton link a formulario solicitud-->
-        <div class="container">
-            <a class="btn btn-danger btn-lg btn-block"
-                href="https://forms.gle/cZdMwGTSY7cuAS7j6"
-                role="button">
-                Realizar Solicitud
-            </a>
+        <div class="date-card">
+            <i data-feather="clock" class="icon"></i>
+            <div><!--fecha de cierre-->
+                <h3>Cierre de la Plataforma</h3>
+                <p>11 Octubre, 2024</p>
+            </div>
         </div>
-        <br>
+        <div class="date-card">
+            <i data-feather="file" class="icon"></i>
+            <div><!--fecha de entrega de documentos-->
+                <h3>Entrega de Documentos</h3>
+                <p>16 de Octubre, 2024</p>
+            </div>
+        </div>
+<!--informacion importante-->
+        <h2>Información Importante</h2>
+        <div class="alert-card">
+            <h3>⚠️</h3>
+            <h4>Los certificados solo serán entregados fisicamente en las oficinas al titular.</h4> 
+        </div>
+        <div class="alert-card">
+            <h3>⚠️</h3>
+            <h4>Los certificados NO serán entregados por correo electronico u otro medio diferente al indicado aneteriomente. </h4>
+        </div>
+        <div class="alert-card">
+            <h3>⚠️</h3>
+            <h4>Cada certificado tiene un costo de $35.000 no reembolsable.</h4>     
+        </div>
+<!--paso para realizar la solicitud-->
+        <h2>Proceso de Solicitud</h2>
+        <ol class="process-list">
+            <li><i data-feather="dollar-sign" class="icon"></i> Pagar el costo del certificado en las oficinas.</li>
+            <li><i data-feather="mouse-pointer" class="icon"></i> Haga clic en el botón "Solicitar Certificado" al final de esta página.</li>
+            <li><i data-feather="edit" class="icon"></i> Complete el formulario con la información requerida.</li>
+            <li><i data-feather="check-circle" class="icon"></i> Revise y confirme los detalles de su solicitud.</li>
+            <li><i data-feather="send" class="icon"></i> Envíe la solicitud y guarde su radicado.</li>
+            <li><i data-feather="file-text" class="icon"></i> Retire el certificado solitado directamente en las oficinas.</li>
+        </ol>
+        
+        <a href="K4L9M8N7P6O5E2D1A3B4R5G/J8I6H7F5C2R9T8U7Y6N5M4O3L2.html" class="btn"><i data-feather="file-plus" class="icon"></i> Solicitar Certificado</a>
     </div>
-    <br>
-    <br>
-    <!--informacion de contacto-->
+    
     <footer>
-        <br>
-        <div class="container fixed">
-            <h4>Contacto: a 379 3571 ext 108 Email: coopcartera2020@gmail.com</h4>
-        </div>
-        <br>
+        <p>© 2024 Servicio de Certificados de Saldo. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        feather.replace({ color: '#666', stroke: '#666' })
+    </script>
 </body>
 </html>
