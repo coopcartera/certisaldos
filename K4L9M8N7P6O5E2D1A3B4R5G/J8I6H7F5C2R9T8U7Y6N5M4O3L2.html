@@ -18,9 +18,9 @@
             return new Promise((resolve, reject) => {
                 // Simulamos la carga de una página
                 setTimeout(() => {
-                    // Cambia esto a `resolve()` para ca
-                    //reject(new Error('No se pudo cargar la página'));
-                    resolve();
+                    // Cambia esto a `resolve()` para dar acceso a la pagina
+                    reject(new Error('No se pudo cargar la página'));
+                    //resolve();
                 }, 5000);//tiempo de carga ebtre mas grande el numero mas demora en cargar la pagina
             });
         }
