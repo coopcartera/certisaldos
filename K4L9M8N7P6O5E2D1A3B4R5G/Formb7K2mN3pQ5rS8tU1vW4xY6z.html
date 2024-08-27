@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forulario de prueba</title>
+    <title>solicitud de certificado</title>
     <link rel="stylesheet" href="./css/frm.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 </head>
 <body>
     <div class="container">
     <h1><i data-feather="file-text" class="icon"></i> Formulario de Solicitud de Certificados</h1>
+    <div id="reloj"></div>
     <form id="myForm"
     method="post"
     action="https://api.sheetmonkey.io/form/kCmYo3ykGY2ebVNt5GX5YK"><!--cambiar API-->
@@ -32,6 +33,7 @@
     </select>
     <label for="sucursal">Sucursal</label>
     <select name="sucursal" id="sucursal" required>
+        <option value="">Elija Una Sucursal</option>
         <option value="BARRANQUILLA">Barranquilla</option>
         <option value="CARTAGENA">Cartagena</option>
     </select>
@@ -47,8 +49,6 @@
         <option value="FER_BOLIVAR">Fer Bolivar</option>
         <option value="FER_ATLANTICO">Fer Atlantico</option>
         <option value="FER_BARRANQUILLA">Fer Distrito Barranquilla</option>
-
-
     </select>
     <label for="origen">Origen de Recursos</label>  
     <select name="origen" id="origen" required>
@@ -102,6 +102,9 @@
 <!--boton de enviar-->
     <input class="btn" type="submit" value="Enviar Solicitud" >
     </form>
+    <footer>
+        <p>© 2024 Servicio de Certificados de Saldo. Todos los derechos reservados.</p>
+    </footer>
     </div>
 
     <script src="./js/formtest.js"></script>

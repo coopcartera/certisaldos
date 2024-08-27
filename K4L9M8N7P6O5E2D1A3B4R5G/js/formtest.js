@@ -44,3 +44,40 @@ numeroInput.addEventListener('input', () => {
     numeroInput.setCustomValidity('');
   }
 });
+// relos del formulario para que el usuario peuda impirmir con fecha y hora la solicitud
+function actualizarReloj() {
+  const ahora = new Date();
+  const opciones = { 
+      weekday: 'long', 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+  };
+  const formatoFechaHora = ahora.toLocaleDateString('es-ES', opciones);
+  document.getElementById('reloj').innerHTML = formatoFechaHora;
+}
+
+// Actualizar el reloj cada segundo
+setInterval(actualizarReloj, 1000);
+
+// Llamar a la función inmediatamente para evitar el retraso inicial
+actualizarReloj();
+
+
+const formulario = document.getElementById('myForm');
+
+formulario.addEventListener('submit', function(event) {
+    // Prevenir el envío inmediato del formulario
+    event.preventDefault();
+    
+    // Llamar a la función de impresión
+    window.print();
+    
+    // Enviar el formulario después de un breve retraso
+    setTimeout(() => {
+        this.submit();
+    }, 100);
+});

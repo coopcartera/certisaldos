@@ -78,7 +78,6 @@ footer {
     position: absolute;
     justify-content: center;
     display: flex;
-    align-content: center;
 }
 .rad{
      display: flex;
@@ -106,4 +105,14 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     
+}
+
+#reloj {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
