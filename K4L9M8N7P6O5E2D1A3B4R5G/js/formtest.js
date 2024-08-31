@@ -44,7 +44,7 @@ numeroInput.addEventListener('input', () => {
     numeroInput.setCustomValidity('');
   }
 });
-// relos del formulario para que el usuario peuda impirmir con fecha y hora la solicitud
+// reloj del formulario para que el usuario peuda impirmir con fecha y hora la solicitud
 function actualizarReloj() {
   const ahora = new Date();
   const opciones = { 
@@ -81,3 +81,7 @@ formulario.addEventListener('submit', function(event) {
         this.submit();
     }, 100);
 });
+//boton de imprimir formulario
+function imprimirFormulario() {
+  window.print();
+}

@@ -10,7 +10,7 @@
 <body>
     <div class="container">
     <h1><i data-feather="file-text" class="icon"></i> Formulario de Solicitud de Certificados</h1>
-    
+    <div id="reloj"></div>
     <form id="myForm"
     method="post"
     action="https://api.sheetmonkey.io/form/kCmYo3ykGY2ebVNt5GX5YK"><!--cambiar API-->
@@ -107,7 +107,7 @@
 <!--boton de enviar-->
     <input class="btn" type="submit" value="Enviar Solicitud" >
     </form>
-    <div id="reloj"></div>
+    <button type="button" onclick="imprimirFormulario()" class="no-print">Imprimir Formulario</button>
     </div>
 
     <script src="./js/formtest.js"></script>
@@ -116,3 +116,4 @@
     </script>
 </body>
 </html>
+<!--pendiente validar ingreeso de datos eantes de enviar en numero de revio de caja-->

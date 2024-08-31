@@ -109,10 +109,46 @@ footer {
 
 #reloj {
     font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-size: 14px;
     color: #333;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
+}
+ /* Estilos para la impresión */
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 0;
+        background: none;
+        transform: scale(0.6);
+        transform-origin: top center;
+    }
+    .form-container {
+        background: none;
+        border: none;
+        max-width: 80%;
+        margin: 0;
+    }
+    .no-print {
+        display: none;
+    }
+    @page{
+        size: letter;
+        margin: 0cm;
+
+    }
+    input, textarea {
+        border: none;
+        padding: 0;
+    }
+    .btng{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    #relo{
+        display:none;
 }
