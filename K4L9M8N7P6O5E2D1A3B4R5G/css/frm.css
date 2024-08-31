@@ -86,15 +86,15 @@ footer {
 .btng {
     display: inline-block;
     background-color: #333;
+    width: 300px;
     color: #fff;
-    padding: 10px 20px;
-    padding-left: 20px;
+    padding: 10px 10px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: all 0.3s ease;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
     border: none;
     cursor: pointer;
@@ -104,6 +104,23 @@ footer {
     background-color: #555;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.btnp{
+    background-color: #cfcfcf;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+}
+.btnp:hover {
+    background-color: #999191;
+    color: #000000;
     
 }
 
