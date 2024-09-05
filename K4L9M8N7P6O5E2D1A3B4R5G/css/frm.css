@@ -140,7 +140,7 @@ footer {
 @media print {
     body {
         font-size: 12pt;
-        line-height: 0;
+        line-height: 10px;
         background: none;
         transform: scale(0.6);
         transform-origin: top center;
@@ -161,7 +161,7 @@ footer {
     }
     input, textarea {
         border: none;
-        padding: 10px;
+        padding: 20px;
     }
     .btng{
         display: none;

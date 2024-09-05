@@ -66,21 +66,6 @@ setInterval(actualizarReloj, 1000);
 // Llamar a la función inmediatamente para evitar el retraso inicial
 actualizarReloj();
 
-
-const formulario = document.getElementById('myForm');
-
-formulario.addEventListener('submit', function(event) {
-    // Prevenir el envío inmediato del formulario
-    event.preventDefault();
-    
-    // Llamar a la función de impresión
-    window.print();
-    
-    // Enviar el formulario después de un breve retraso
-    setTimeout(() => {
-        this.submit();
-    }, 100);
-});
 //boton de imprimir formulario
 function imprimirFormulario() {
   window.print();
