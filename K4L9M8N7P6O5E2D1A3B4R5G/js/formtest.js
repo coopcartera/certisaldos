@@ -1,12 +1,20 @@
-//genera el radicado
 function generarRadicado() {
-    const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let radicado = '';
-    for (let i = 0; i < 10; i++) {
-        radicado += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-    }
-    document.getElementById('radicado').value = radicado;
+  const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  let radicado = '';
+  for (let i = 0; i < 10; i++) {
+      radicado += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+  }
+  document.getElementById('radicado').value = radicado;
+  
+  // Deshabilitar el botón después de generar el radicado
+  document.getElementById('botonGenerar').disabled = true;
 }
+
+// Asegúrate de que el botón esté habilitado cuando la página se carga
+window.onload = function() {
+  document.getElementById('botonGenerar').disabled = false;
+}
+
 // Función para validar antes de enviar
 function validarFormulario() {
   const radicado = document.getElementById("radicado").value;
