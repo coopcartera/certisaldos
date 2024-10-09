@@ -42,6 +42,7 @@
     <label for="pagaduria">Pagaduría</label>
     <select name="pagaduria" id="pagaduria" required>
         <option value="">Elige una pagaduría</option>
+        <option value="CREDITO_PERSONAL">Credito Particular</option>
         <option value="COLPENSIONES">Colpensiones</option>
         <option value="FOPEP">Fopep</option>
         <option value="FIDUPREVISORA">Fiduprevisora</option>
@@ -60,9 +61,10 @@
         <option value="RECURSOS PROPIOS">Recuros Propios</option>
         <option value="TERCERO">Banco, Cooperativa o Financiera</option>
     </select>
+    <div class="alert">⚠️ Si selecciona <strong>Recursos Propios</strong>, solo se Recibira sus pago en <strong>EFECTIVO</strong></div>
     <label for="entidad">Entidad que Realizara La Compra de Cartera</label>
     <select name="entidad" id="entidad" style="display: none;" required>
-        <option value="">Elija la entidad que comprara su cartera.</option>
+        <option value="EFECTIVO">Elija una entidad, de otro modo su pago solo se recibirá en EFECTIVO.</option>
         <option value="GNB SUDAMERIS">BANCO GNB SUDAMERIS</option>
         <option value="AV VILLAS">BANCO AV VILLAS</option>
         <option value="BOGOTA">BANCO DE BOGOTA</option>
@@ -77,6 +79,7 @@
         <option value="GIROS Y FINANZAS">GIROS Y FINANZAS</option>
         <option value="JURISCOOP">JURISCOOP</option>
         <option value="CREDITO UNO">CREDITO UNO</option>
+        <option value="CREDITOS Y MAS">CREDITOS Y MAS</option>
         <option value="FINEXUS">FINEXUS</option>
         <option value="KREDIT">KREDIT</option>
         <option value="BAYPORT">BAYPORT</option>
@@ -91,10 +94,13 @@
         <option value="SOEMPRESARIAL">SOEMPRESARIAL</option>
         <option value="SOL DE ORO">SOL DE ORO</option>
         <option value="COOCREDITO">COOCREDITO</option>
+        <option value="COOCREDIPRISA">COOCREDIPRISA</option>
         <option value="COOPSERVP">COOPSERVP</option>
+        <option value="COOPSERVIR">COOPSERVIR</option>
+
     </select>
     <label for="rc">Ingrese el numero de recibo de caja: Ejemplo 20250000123</label>    
-    <input type="number" id="rc" name="rc">
+    <input type="number" id="rc" name="rc" required>
     <!--generar el radicado-->
     <label for="radicado" required="">Radicado</label>
     <div class="rad"> 

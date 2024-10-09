@@ -126,6 +126,11 @@ footer {
     color: #000000;
     
 }
+.alert{
+    background-color: #fdeb4b;
+    text-align: center;
+    padding: 3px;
+}
 
 #reloj {
     font-family: Arial, sans-serif;
